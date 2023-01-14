@@ -133,10 +133,6 @@ RSpec.describe 'Advanced Nested Collections' do
       { **acc, **cur[:dishes].reduce({}){ |accu, curr| { **accu, curr[:name] => curr } }}
     }
 
-    # full_menu = stores.values.map{ |store| store[:dishes] }.flatten.reduce({}){ |acc, cur|
-    #   { **acc, cur[:name] => cur }
-    # }
-
     expected = {
       "Risotto" => {
         :name => "Risotto",
