@@ -1,5 +1,5 @@
-class Aardvark
-  attr_reader :name
+class Groundhog
+  attr_accessor :name
 
   def initialize(name)
     @name = name
